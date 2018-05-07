@@ -1,0 +1,171 @@
+<ion-header>
+        <ion-navbar>
+          <ion-row class="row">
+              <ion-col class="col"></ion-col>
+              <ion-col class="col"><ion-title>EVENTS</ion-title></ion-col>
+              <ion-col class="col"></ion-col>
+            </ion-row>      
+          </ion-navbar>
+      </ion-header>
+<ion-content>        
+    <ion-searchbar
+          [(ngModel)]="myInput"
+          [showCancelButton]="shouldShowCancel"
+          (ionInput)="onInput($event)"
+          (ionCancel)="onCancel($event)" placeholer="Search Event ...">Search Event ...
+    </ion-searchbar>
+    <div class="item item-divider">
+        <button class="button button-when"><h2>TODAY</h2></button>
+    </div>
+            <ion-row class="row" id="event-info"  *ngFor="let eventt of eventstoday">
+              <div class="item item-avatar">
+                <div class="row">
+                    <div class="col col-3">
+                        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png">
+                    </div>
+                    <div class="col col-9">
+                        <h2>{{item.title}}</h2>
+                        <p>{{item.dateTime}}</p>
+                        <!--<span am-time-ago="item.dateTime"></span>-->
+                        <p>Tomorrow from 12 AM</p>
+                        <ion-row class="row">
+                <ion-item id="guest-avatars">
+                <ion-avatar>
+                <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png"/>
+                </ion-avatar><ion-avatar>
+                <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png"/>
+                </ion-avatar><ion-avatar>
+                <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png"/>
+                    </ion-avatar><span class="avatar-others"><strong>+8 others</strong></span>
+                </ion-item>
+                </ion-row>
+                <ion-row class="row">
+                <button class="button response going">Going</button> 
+                <button class="button response ignore">Ignore</button>            
+                </ion-row>
+                    </div>
+                </div>          
+                </div>
+              </ion-row>
+        
+    <div class="item item-divider">
+        <button class="button button-when"><h2>THIS WEEK</h2></button>
+    </div>
+    <ion-row class="row" id="event-info"  *ngFor="let item of items">
+       <div class="item item-avatar">
+            <div class="row">
+                <div class="col col-3">
+                    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png">
+                </div>
+                <div class="col col-9">
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.dateTime}}</p>
+                    <!--<span am-time-ago="item.dateTime"></span>-->
+                    <p>Tomorrow from 12 AM</p>
+                    <ion-row class="row">
+            <ion-item id="guest-avatars">
+            <ion-avatar>
+            <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png"/>
+            </ion-avatar><ion-avatar>
+            <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png"/>
+            </ion-avatar><ion-avatar>
+            <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png"/>
+                </ion-avatar><span class="avatar-others"><strong>+8 others</strong></span>
+            </ion-item>
+            </ion-row>
+            <ion-row class="row">
+            <button class="button response going">Going</button> 
+            <button class="button response ignore">Ignore</button>            
+            </ion-row>
+                </div>
+            </div>          
+        </div>
+      </ion-row>
+    
+    <div class="item item-divider">
+        <button class="button button-when"><h2>OTHER</h2></button>
+    </div>
+    <ion-row class="row" id="event-info"  *ngFor="let item of items">
+        <div class="item item-avatar">
+            <div class="row">
+                <div class="col col-3">
+                    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png">
+                </div>
+                <div class="col col-9">
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.dateTime}}</p>
+                    <!--<span am-time-ago="item.dateTime"></span>-->
+                    <p>Tomorrow from 12 AM</p>
+                    <ion-row class="row">
+            <ion-item id="guest-avatars">
+            <ion-avatar>
+            <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png"/>
+            </ion-avatar><ion-avatar>
+            <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png"/>
+            </ion-avatar><ion-avatar>
+            <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png"/>
+                </ion-avatar><span class="avatar-others"><strong>+8 others</strong></span>
+            </ion-item>
+            </ion-row>
+            <ion-row class="row">
+            <button class="button response going">Going</button> 
+            <button class="button response ignore">Ignore</button>            
+            </ion-row>
+                </div>
+            </div>          
+        </div>
+      </ion-row>
+    
+</ion-content>
+<style>
+#guest-avatars ion-avatar {
+    display: inline-block;
+    border: solid white;
+    border-radius:50px;
+    margin-left: -10px;
+}
+#guest-avatars ion-avatar:first-of-type {
+    margin-left: 10px;
+    }
+    
+    .button-when {
+    background: #ffd004;
+    font-size: 1.4rem;
+    font-style: italic;
+    padding: 0 20px !important;
+    margin-bottom: -20px;
+        }
+    .button.response {
+    font-size: 1.4rem;
+    font-style: italic;
+    padding: 0 20px !important;
+    margin-bottom: -20px;
+    }
+    .button.response.going {
+    background: #ffd004;
+    }
+    .item.item-avatar {
+
+    width: 100%;
+
+}
+    
+    .item.item-divider {
+    height: 40px;
+    background: #f5f5f5;
+}
+    #event-info{
+        padding-top: 40px;
+        padding-bottom: 20px;   
+    }
+    
+    #event-info h2{
+        font-variant-caps: all-small-caps;
+    }
+    .img-event{
+        height: 160px;
+        width: 160px;
+        
+    }
+
+</style>

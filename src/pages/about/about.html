@@ -1,0 +1,251 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+<!--
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-end>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+-->
+
+<ion-card>
+
+  <img src="/assets/imgs/ams.png">
+    <h1> <strong>AMSTERDAM BIKE</strong></h1>
+    <ion-row class="row" id="event-info1">
+      <ion-col class="col" col-3="">
+        <p>Public Event</p>
+      </ion-col>
+      <ion-col class="col" col-1="">
+        <p>&middot;</p>
+      </ion-col>
+      <ion-col class="col" col>
+        <p>Hosted By TSH Amsterdam City</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row" id="event-info2">
+      <ion-item>
+       <ion-icon name="time" item-start></ion-icon>
+      Tomorrow June, 19 from 9.30 - 11 PM
+      </ion-item>
+      <ion-item>
+       <ion-icon name="pin" item-start></ion-icon>
+      The Pool &middot; The Student Hotel Amsterdam City
+      </ion-item>
+      <ion-item>
+       <ion-icon name="speedometer" item-start></ion-icon>
+      <strong>15 Going</strong>
+      </ion-item>
+    </ion-row>
+
+<ion-item id="guest-avatars">
+    <ion-avatar>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png" width="50px" />
+    </ion-avatar><ion-avatar>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png" width="50px" />
+    </ion-avatar><ion-avatar>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png" width="50px" />
+    </ion-avatar><ion-avatar>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png" width="50px" />
+    </ion-avatar><ion-avatar>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png" width="50px" />
+    </ion-avatar><ion-avatar>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png" width="50px" />
+    </ion-avatar><ion-avatar>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png" width="50px" />
+    </ion-avatar>
+<ion-avatar class="fab" width="40px !important" height="40px !important" style="background-color:gold; font-size: 1em; font-weight: bold; display: inline-block; width:40px !important; height:40px !important; margin-left: -20px;">+8</ion-avatar>
+    <!--<button class="fab" mini="" style="background-color:gold; font-size: 1em; font-weight: bold; display: inline-block;"><ion-icon class="fab-close-icon icon icon-ios ion-ios-close" name="close" role="img" aria-label="close"></ion-icon>+8<div class="button-effect"></div></button>
+    -->
+
+    
+    <!--    <div width="50px" style="font-size: 3.3em">&#10129;</div>-->
+
+</ion-item>
+
+    <p>TEXT TEXT</p>
+      <ion-item>
+     <ion-input type="text"></ion-input>
+    </ion-item>
+
+<ion-input formcontrolname="eventMessageInput" placeholder="Leave a message..." type="text" class="input input-ios ng-pristine ng-invalid ng-touched"></ion-input>
+
+</ion-card>
+<ion-card>
+<ion-item id="guest-avatars">
+    <ion-row class="row" id="event-info1">
+      <ion-col class="col" col-2="">
+        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png" width="50px" />
+      </ion-col>
+        <ion-col>
+            <ion-row class="row">
+              <ion-col class="col" col>
+                <h5><strong>Lucie van Geffen</strong></h5>
+              </ion-col>
+              <ion-col class="col" col>
+                <p>Shared a link.</p>
+              </ion-col>
+            </ion-row>
+            <ion-row class="row">
+              <p><ion-icon name="clock" item-start></ion-icon>  14 minutes ago</p>
+            </ion-row>
+        </ion-col>
+      </ion-row>
+</ion-item>
+    <ion-row class="row">
+        <img src="/assets/imgs/ams.png">
+      </ion-row>
+<ion-item>
+        <h3><strong>THE BIKE INSTRUCTORS GUIDE TO CYCLING ..</strong></h3><br/>
+        <h5>Thankfully, Maxim Hartman aka The Bike Instructor ..</h5><br/>
+        <p>youtube.com</p>
+</ion-item>
+ <ion-item>
+            <ion-row class="row">
+              <ion-col class="col" col-2>
+                  <ion-icon name="thumbsup" item-start></ion-icon></ion-col>
+              <ion-col class="col" col></ion-col>
+            </ion-row>
+            <ion-row class="row">
+              <ion-col class="col" col><ion-icon name="thumbsup" item-start></ion-icon>  High five</ion-col>
+              <ion-col class="col" col><ion-icon name="chatbubble" item-start></ion-icon>  Comment</ion-col>
+            </ion-row>
+     
+</ion-item>
+
+
+</ion-card>
+    
+    <ion-card>
+<ion-item id="guest-avatars">
+         <ion-row class="row" id="event-info1">
+              <ion-col class="col" col-2="">
+                <ion-avatar>
+                <img src="https://ionicframework.com/dist/preview-app/www/assets/img/thumbnail-terminator.png" width="50px" />
+                </ion-avatar>
+              </ion-col>
+                <ion-col>
+                    
+                    <!--
+                    <div class="item item-avatar">
+                      <img src="/img/docs/mcfly.jpg">
+                      <h2>Marty McFly</h2>
+                      <p>November 05, 1955</p>
+                    </div>
+                    -->
+                    
+                    <ion-row class="row">
+                      <ion-col class="col" col>
+                        <h5><strong>Bruno Dagestino</strong></h5>
+                      </ion-col>
+                      <ion-col class="col" col>
+                        <p>Shared a link.</p>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row class="row">
+                      <p><ion-icon name="clock" item-start></ion-icon>  14 minutes ago</p>
+                    </ion-row>
+                </ion-col>
+        </ion-row>
+          <ion-row class="row"> 
+            <ion-col class="col" col-2><i class="icon ion-android-hand"></i></ion-col>
+            <ion-col class="col" col></ion-col>
+          </ion-row>
+          <ion-row class="row">
+                          <ion-col class="col" col>
+                                 <i class="ion-thumbsup" item-start></i>  High five
+                          </ion-col>
+                          <ion-col class="col" col>
+                                 <i class="ion-chatbubble" item-start></i>  Comment
+                          </ion-col>
+          </ion-row>
+</ion-item>
+
+<ion-row class="row">
+        <img src="/assets/imgs/ams.png">
+      </ion-row>        
+<ion-item>
+      
+        <h3><strong>THE BIKE INSTRUCTORS GUIDE TO CYCLING ..</strong></h3>
+        <p>Is it possible to leave after an hour? I would love to join, but I have another appointment later that evening..</p>
+</ion-item>
+        
+  
+
+
+</ion-card>
+    
+    
+<!--
+<div ng-app="myapp">
+<ion-card  ng-controller="MainCtrl">
+<ul>
+  <li ng-repeat='ret in arr track by $index'>
+    <div ng-click="collapseIt($index)">{{ret.name}}</div>
+    <div ng-if="collapseId==$index">
+      {{ret.desc}}
+    </div>
+  </li>
+</ul>
+</ion-card>
+</div>-->
+
+
+</ion-content>
+
+<style href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"></style>
+<style>
+#guest-avatars ion-avatar {
+    display: inline-block;
+    border: 2px white;
+    margin-left: -10px;
+}
+#guest-avatars ion-avatar:first-of-type {
+    margin-left: 10px;
+    }
+</style>
+
+<style>
+li {
+  list-style:none;
+  padding:5px;
+  color:red;
+}
+div{
+  padding:10px;
+  background:#ddd;
+}
+</style>
+<!--
+<script>
+var app = angular.module('myapp', []);
+
+app.controller('MainCtrl', function($scope) {
+
+  $scope.arr= [
+    {name:"Head1",desc:"Head1Desc"},
+    {name:"Head2",desc:"Head2Desc"},
+    {name:"Head3",desc:"Head3Desc"},
+    {name:"Head4",desc:"Head4Desc"}
+    ];
+    
+    $scope.collapseIt = function(id){
+      $scope.collapseId = ($scope.collapseId==id)?-1:id;
+    }
+});</script>
+-->
